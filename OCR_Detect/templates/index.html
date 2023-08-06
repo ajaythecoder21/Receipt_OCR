@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django DL App</title>
+</head>
+<body>
+    <h1>Hello World !</h1>
+
+    <hr>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="imageFile" /><br>
+        <input type="submit" name="submit" value="Upload" />
+        
+    </form>
+    {{predictions}}
+    {{file_type}}
+</body>
+</html>
